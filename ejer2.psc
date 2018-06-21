@@ -9,12 +9,12 @@ Algoritmo Calculadora
 	Escribir "quiere sumar(+) o restar(-) los numeros"
 	Leer operador
 	
-	si operador = "+"
-		respuesta<-numero1+numero2
-	FinSi
-	si operador = "-"
-		respuesta<-numero1-numero2
-	FinSi
+	segun operador hacer
+		"+": respuesta<-numero1+numero2
+		"-": respuesta<-numero1-numero2
+		De Otro Modo:
+			Escribir "aweonao"
+	Fin segun
 	
 	Escribir "esta es su respuesta "
 	Escribir respuesta
